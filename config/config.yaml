@@ -36,6 +36,8 @@ seed_keywords:
   - kontroll av brannslokker bergen
   - brannsikring bedrift bergen
   - brannvernopplæring bergen
+  - nødlys bergen
+  - service nødlys bedrift bergen
 
 # Spørsmål en kunde kan stille ChatGPT/Perplexity/Gemini
 ai_prompts:
@@ -44,4 +46,6 @@ ai_prompts:
   - "Hva koster service av brannalarm for en bedrift i Vestland?"
   - "Hvilke krav gjelder for brannvernopplæring i bedrifter?"
   - "Anbefal et brannvernfirma i Bergen"
+  - "Hvem kan montere og kontrollere nødlys i Bergen?"
+  - "Hvor ofte må nødlys kontrolleres i en bedrift?"
 brand_names: [BSV Fire, BSV, bsvfire]
