@@ -2,13 +2,14 @@
 import os
 import re
 import requests
+from urllib.parse import urlparse
 
 
 def _mentions(text, brands, domain, competitors):
     low = text.lower()
     return {
         "mentioned": any(b.lower() in low for b in brands) or domain in low,
-        "competitors_mentioned": [c for c in competitors if c.split(".")[0].lower() in low],
+        "competitors_mentioned": [c for c in competitors if urlparse(c if "//" in c else "//" + c).netloc.replace("www.", "").split(".")[0].lower() in low],
         "urls": re.findall(r"https?://[^\s)\]]+", text)[:10],
     }
 

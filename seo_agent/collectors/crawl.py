@@ -73,5 +73,5 @@ def collect(cfg):
     return {
         "site_files": site_files(site["url"]),
         "pages": [audit_page(u) for u in urls[:60]],
-        "competitors": [audit_page(f"https://{c}/") for c in cfg.get("competitors", [])],
+        "competitors": [audit_page(c if c.startswith("http") else f"https://{c}/") for c in cfg.get("competitors", [])],
     }

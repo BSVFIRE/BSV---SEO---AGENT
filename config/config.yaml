@@ -20,7 +20,14 @@ services:
   - branntetting
   - internkontroll brannvern
 
-competitors: []   # fylles inn av Claude etter at du sier hvilke konkurrenter du kjenner til
+competitors:   # domene eller full URL (full URL brukes når lokal side er relevant)
+  - https://www.proceedas.no/
+  - https://www.bravida.no/kontakt/norge/bergen/brann-sikkerhet-las/
+  - https://www.gk.no/privat/gk-bergen
+  - https://sectech.no/
+  - https://teknisk-industrivern.no/
+  - https://www.fredriksenbrannkontroll.no/
+  - https://www.fcbergen.no/
 
 # Sentrale søkeord (utvides automatisk fra Search Console / Google Ads)
 seed_keywords:
