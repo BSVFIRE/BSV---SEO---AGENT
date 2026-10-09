@@ -17,7 +17,7 @@ services:
   - brannvernopplæring
   - egenkontroll brann
   - rømningsplan
-  - branntetting
+  - nødlys
   - internkontroll brannvern
 
 competitors:   # domene eller full URL (full URL brukes når lokal side er relevant)
