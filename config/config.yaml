@@ -1,0 +1,42 @@
+site:
+  domain: bsvfire.no
+  url: https://www.bsvfire.no/
+  sitemap: https://www.bsvfire.no/sitemap.xml
+  cms_note: "Bygget og driftet av Mint Media. Vi kan fritt endre; anbefalinger skrives slik at de kan sendes direkte til Mint Media."
+
+geo:
+  primary: [Bergen]
+  secondary: [Vestland, Askøy, Øygarden, Alver, Bjørnafjorden, Voss, Sotra, Os, Osterøy]
+
+# Fyll inn/juster: tjenestene BSV faktisk leverer. Brukes til å lage søkeord og AI-spørsmål.
+services:
+  - brannsikring
+  - brannalarm
+  - slukkeutstyr
+  - brannslokkere kontroll
+  - brannvernopplæring
+  - egenkontroll brann
+  - rømningsplan
+  - branntetting
+  - internkontroll brannvern
+
+competitors:   # legg inn faktiske domener
+  - example-konkurrent1.no
+  - example-konkurrent2.no
+
+# Sentrale søkeord (utvides automatisk fra Search Console / Google Ads)
+seed_keywords:
+  - brannalarm bergen
+  - brannvern bergen
+  - kontroll av brannslokker bergen
+  - brannsikring bedrift bergen
+  - brannvernopplæring bergen
+
+# Spørsmål en kunde kan stille ChatGPT/Perplexity/Gemini
+ai_prompts:
+  - "Hvem kan kontrollere brannslokkere for bedrifter i Bergen?"
+  - "Beste firma for brannalarm og brannsikring i Bergen"
+  - "Hva koster service av brannalarm for en bedrift i Vestland?"
+  - "Hvilke krav gjelder for brannvernopplæring i bedrifter?"
+  - "Anbefal et brannvernfirma i Bergen"
+brand_names: [BSV Fire, BSV, bsvfire]
