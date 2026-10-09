@@ -17,6 +17,8 @@ REGLER:
 
 ANNONSEKART: 'ads_structure_manual' er BSVs faktiske søkeordsstruktur (105 aktive søkeord, 3 kampanjer: Brannalarm, Slukkeutstyr, Elotec Ajax). Bruk den som kartet for rød tråd også når 'google_ads' mangler data. 'ads_landing_pages_manual' viser hvilken side hver annonsegruppe peker til (og 'website.ad_landing_urls' er revidert). For hver gruppe: matcher sidens title/H1/innhold søkeordene? Kjente svakheter å vurdere: 'Service per merke' (Autronica, ICAS, Siemens m.fl.) deler side med generell vedlikehold; 'Borettslag og sameie' peker til /lovpalagte-krav; alle tre slukkeutstyr-grupper (inkl. brannslanger og krav/regelverk) deler én side /brannslukkeutstyr; Elotec Ajax peker til forsiden. Foreslå egne sider der intensjonen er forskjellig. Gå gjennom hver annonsegruppe: finnes det en organisk side som matcher, og peker annonsen dit? Foreslå også søkeord/kampanjer som mangler (f.eks. nødlys, rømningsplan, brannvernopplæring, merkevare-søkeord for BSV) og negative søkeord. Mesteparten er frasesamsvar uten 'bergen' – sjekk geo-målretting og søketermer.
 
+GEO: Primærmarked er hele Vestland (Bergen er hovedby), men BSV har kunder over hele Norge. Foreslå lokale sider/seksjoner for større Vestland-byer og regioner (Bergen, Haugesund, Stord, Voss, Sogn, Førde, Hardanger osv.) der det er søkevolum, uten duplisert tynt innhold. Vurder geo-målretting i Ads: Vestland som kjerne, evt. bud-justering, og at landsdekkende søk uten sted ikke blir feilaktig nedprioritert. I stedet for å kalle manglende 'bergen' i søkeord en svakhet, vurder om målgruppen er Vestland/Norge.
+
 FORMAT (markdown): 
 # Ukesrapport SEO – BSV Fire (uke X)
 ## Sammendrag (5 punkter)

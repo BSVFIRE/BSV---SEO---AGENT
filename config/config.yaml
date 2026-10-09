@@ -6,7 +6,8 @@ site:
 
 geo:
   primary: [Bergen]
-  secondary: [Vestland, Askøy, Øygarden, Alver, Bjørnafjorden, Voss, Sotra, Os, Osterøy]
+  secondary: [Vestland, Askøy, Øygarden, Alver, Bjørnafjorden, Voss, Sotra, Os, Osterøy, Haugesund, Stord, Førde, Sogndal, Florø, Sunnfjord, Hardanger, Sunnhordland, Nordhordland, Sogn]
+  national: "Kunder i hele Norge; primærmarked er Vestland (Bergen som hovedby). Ikke begrens anbefalinger til Bergen, men prioriter Vestland. Landsdekkende søk uten stedsnavn er relevante."
 
 # Fyll inn/juster: tjenestene BSV faktisk leverer. Brukes til å lage søkeord og AI-spørsmål.
 services:
