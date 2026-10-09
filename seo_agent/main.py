@@ -8,6 +8,7 @@ from datetime import date
 from email.message import EmailMessage
 import yaml
 from .collectors import crawl, google, ai_visibility
+from . import ads_structure
 
 
 def safe(fn, *a):
@@ -25,6 +26,7 @@ def collect(cfg):
         "search_console": safe(google.search_console),
         "analytics": safe(google.ga4),
         "google_ads": safe(google.google_ads),
+        "ads_structure_manual": safe(ads_structure.parse),
         "ai_visibility": safe(ai_visibility.collect, cfg),
     }
 

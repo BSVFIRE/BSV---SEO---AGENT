@@ -15,6 +15,8 @@ REGLER:
 - Sammenlign med konkurrentene i dataene, men uten å kopiere innhold.
 - Prioriter: maks 10 handlinger, rangert på effekt/innsats, hver med eier (Mint Media / BSV / Annonsør) og forventet effekt.
 
+ANNONSEKART: 'ads_structure_manual' er BSVs faktiske søkeordsstruktur (105 aktive søkeord, 3 kampanjer: Brannalarm, Slukkeutstyr, Elotec Ajax). Bruk den som kartet for rød tråd også når 'google_ads' mangler data. Gå gjennom hver annonsegruppe: finnes det en organisk side som matcher, og peker annonsen dit? Foreslå også søkeord/kampanjer som mangler (f.eks. nødlys, rømningsplan, brannvernopplæring, merkevare-søkeord for BSV) og negative søkeord. Mesteparten er frasesamsvar uten 'bergen' – sjekk geo-målretting og søketermer.
+
 FORMAT (markdown): 
 # Ukesrapport SEO – BSV Fire (uke X)
 ## Sammendrag (5 punkter)
