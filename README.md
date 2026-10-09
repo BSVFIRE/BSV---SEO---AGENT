@@ -12,7 +12,7 @@ Ukentlig, **kun-lesende** rådgiver for bsvfire.no (Bergen/Vestland). Den endrer
 7. **Claude** skriver rapporten: prioriterte tiltak (eier: Mint Media / BSV / annonsør), nye sider med H1/H2-utkast og faglig tekst, annonseforslag, endringer siden sist.
 
 ## Sikkerhet (aldri endre)
-- Google-scopes er `*.readonly`; Ads-bruker bør ha «Read only»-rolle.
+- Search Console og GA4: kun `*.readonly`-scopes. Google Ads har ikke readonly-scope, så agenten kobles til med en bruker som har «Read only»-rolle (se SETUP.md).
 - HTTP kun GET/HEAD (`seo_agent/guardrails.py`), GAQL kun `SELECT`. Tester i `tests/` feiler hvis mutasjonskall legges til.
 
 ## Oppsett
@@ -21,4 +21,4 @@ Ukentlig, **kun-lesende** rådgiver for bsvfire.no (Bergen/Vestland). Den endrer
 3. `pip install -r requirements.txt && python -m seo_agent.main` (`--no-llm` = kun rådata).
 4. Automatisk: legg verdiene som GitHub Secrets; `.github/workflows/weekly-report.yml` kjører mandager.
 
-Tilganger som må gis (alle lesetilgang): service account i Search Console og GA4; Google Ads API-token + leserolle.
+Oppsett steg for steg: se [SETUP.md](SETUP.md).
