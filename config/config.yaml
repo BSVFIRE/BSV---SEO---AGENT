@@ -20,9 +20,7 @@ services:
   - branntetting
   - internkontroll brannvern
 
-competitors:   # legg inn faktiske domener
-  - example-konkurrent1.no
-  - example-konkurrent2.no
+competitors: []   # fylles inn av Claude etter at du sier hvilke konkurrenter du kjenner til
 
 # Sentrale søkeord (utvides automatisk fra Search Console / Google Ads)
 seed_keywords:
