@@ -34,3 +34,13 @@ def parse(path="data/ads_keywords.txt"):
                 grp["keywords"].append({"kw": k.strip("[]"), "match": "eksakt" if exact else "frase",
                                         **({"match_unconfirmed": True} if unconfirmed else {})})
     return camps
+
+
+def landing_pages(path="data/ads_landing_pages.txt"):
+    rows = []
+    for line in open(path, encoding="utf-8"):
+        line = line.strip()
+        if line and not line.startswith("#"):
+            c, g, u = [x.strip() for x in line.split("|")]
+            rows.append({"campaign": c, "ad_group": g, "url": u})
+    return rows

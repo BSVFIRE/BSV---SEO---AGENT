@@ -1,0 +1,12 @@
+# Stand per 2026-10-09. Format: Kampanje | Annonsegruppe | Landingsside
+Brannalarm 2.0 | Årskontroll og FG-kontroll | https://www.bsvfire.no/brannalarm/kontroll
+Brannalarm 2.0 | Service og vedlikehold | https://www.bsvfire.no/brannalarm/vedlikehold
+Brannalarm 2.0 | Service per merke | https://www.bsvfire.no/brannalarm/vedlikehold
+Brannalarm 2.0 | Borettslag og sameie | https://www.bsvfire.no/lovpalagte-krav
+Brannalarm 2.0 | Nytt anlegg | https://www.bsvfire.no/brannalarm/nytt
+Brannalarm 2.0 | Oppgradering | https://www.bsvfire.no/brannalarm/oppgradere
+Brannalarm 2.0 | Brannalarm generelt | https://www.bsvfire.no/brannalarm
+Slukkeutstyr | Kontroll og service av slukkere | https://www.bsvfire.no/brannslukkeutstyr
+Slukkeutstyr | Brannslanger | https://www.bsvfire.no/brannslukkeutstyr
+Slukkeutstyr | Krav og regelverk | https://www.bsvfire.no/brannslukkeutstyr
+Elotec Ajax | Elotec Ajax | https://www.bsvfire.no

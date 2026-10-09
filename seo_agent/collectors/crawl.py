@@ -70,8 +70,15 @@ def site_files(base):
 def collect(cfg):
     site = cfg["site"]
     urls = sitemap_urls(site["sitemap"]) or [site["url"]]
+    try:  # annonse-landingssider revideres alltid, også om de ikke er i sitemap
+        from ..ads_structure import landing_pages
+        ad_urls = list(dict.fromkeys(r["url"] for r in landing_pages()))
+    except Exception:
+        ad_urls = []
+    urls = ad_urls + [u for u in urls if u not in ad_urls]
     return {
         "site_files": site_files(site["url"]),
+        "ad_landing_urls": ad_urls,
         "pages": [audit_page(u) for u in urls[:60]],
         "competitors": [audit_page(c if c.startswith("http") else f"https://{c}/") for c in cfg.get("competitors", [])],
     }

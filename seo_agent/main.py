@@ -27,6 +27,7 @@ def collect(cfg):
         "analytics": safe(google.ga4),
         "google_ads": safe(google.google_ads),
         "ads_structure_manual": safe(ads_structure.parse),
+        "ads_landing_pages_manual": safe(ads_structure.landing_pages),
         "ai_visibility": safe(ai_visibility.collect, cfg),
     }
 
