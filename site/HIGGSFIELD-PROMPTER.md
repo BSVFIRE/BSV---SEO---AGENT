@@ -41,3 +41,22 @@ Generiske produkter uten logo, tekst eller merkenavn. Format 16:9, 5–8 sek, ut
 | `video/design-sprinkler.mp4` | Makrobilde av sprinklerhode i taket, en dråpe vann dannes og faller i sakte film, mørk bakgrunn med oransje kantlys. |
 
 Legg filene inn som bakgrunnsfilm i seksjonene (samme `<video data-autoplay muted loop playsinline>`-mønster som filmbåndet på forsiden).
+
+## Teknisk film: «Inne i brannsentralen» (zoom inn, forklarende)
+Mål: én film som zoomer fra en brannsentral inn i kretskortet og viser hva som skjer: sløyfer, brannklokker, alarm til brannvesen, batteri, trådløse enheter, fjernstyring.
+Lag den som 6 korte klipp à 4–6 sek (mer kontroll og bedre kvalitet enn ett langt klipp), og sett dem etter hverandre.
+Modell: Cinema Studio Video 3.0 eller Seedance 2.5. Bruk siste bilde i hvert klipp som startbilde i neste, så blir zoomen sammenhengende.
+Format 16:9, uten lyd. Tekst i selve videoen blir ofte feil, så **ingen tekst i prompten**. Etikettene legger vi på siden som HTML-tekst over filmen.
+Felles stil: mørk grafitt-bakgrunn, presis produktvisualisering, kald hvit nøytral belysning, oransje (#EF661C) lys som viser signalene. Generisk utstyr, ingen logoer eller merkenavn.
+
+| # | Klipp | Prompt | Etikett som legges på siden |
+|---|---|---|---|
+| 1 | Oversikt | Moderne vegghengt brannalarmsentral i et teknisk rom, nøytral grå kabinett med display uten tekst, rolig kamera som sakte nærmer seg. | Brannsentralen |
+| 2 | Inn i kabinettet | Døren åpnes og kameraet glir inn mot et kretskort med tydelige tilkoblingsklemmer, makrodybde, lett refleksjon. | Hjernen i anlegget |
+| 3 | Sløyfer | Oransje lys pulserer langs tykke kabler fra kretskortet og ut til små detektorer i taket, i en sløyfe som lukker seg, abstrakt teknisk visualisering. | Detektorsløyfer |
+| 4 | Utganger | Fra kretskortet går lyspulser til en brannklokke/sirene på veggen og til en blinkende varsler, og et signal sendes ut mot en ikon-lignende antenne uten tekst. | Brannklokker og alarm til brannvesen |
+| 5 | Strømbrudd | Rommet blir mørkt. Et batteri ved siden av kretskortet lyser opp og sentralen fortsetter å fungere, kaldt blått lys blir varmt oransje. | Batteri ved strømbrudd |
+| 6 | Trådløst og sky | Kamera trekker ut. Små trådløse enheter i rommet sender ringer av lys, og en stilisert lysstråle går opp til en sky og ned til en mobil som viser et nøytralt grensesnitt uten tekst. | Trådløse enheter og fjernstyring |
+
+Lagre som `video/teknisk-brannsentral-1.mp4` … `-6.mp4` (eller klipp dem sammen til `video/teknisk-brannsentral.mp4`) og legg posterbilde i `img/teknisk-brannsentral-poster.jpg`.
+Teknisk fakta å holde seg til i teksten: sløyfer, brannklokker, alarmoverføring til brannvesen, batteri-reserve, trådløse enheter (f.eks. Ajax), fjernstyring/sky. Jeg legger inn de endelige etikettene når filmene er klare.
