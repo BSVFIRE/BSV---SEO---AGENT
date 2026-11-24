@@ -27,3 +27,17 @@ nøytral oransje aksent i arbeidstøy, ingen leselige logoer eller tekst på uts
 | `img/miljo-elbil.jpg` | Elektrisk servicebil, fjell og natur ved Bergen |
 | `img/miljo-natur.jpg` | Natur ved Bergen, fjord og fjell i morgenlys |
 | `img/og-bsv-fire.jpg` | Delingsbilde 1200x630 JPG: tekniker + mørk bakgrunn, plass til logo (legges på i etterkant) |
+
+## Designfilmer i fourphase-stil (produkt og teknikk, uten mennesker)
+Rene, stilige produktfilmer med mørk eller lys bakgrunn, myke lysrefleksjoner, sakte kamerakjøring og oransje lys som aksent.
+Bruk gjerne Cinema Studio Video 3.0 eller Seedance 2.5: lag først ett stillbilde som startbilde (image-to-video), så blir stilen jevn.
+Generiske produkter uten logo, tekst eller merkenavn. Format 16:9, 5–8 sek, uten lyd.
+
+| Fil | Prompt |
+|---|---|
+| `video/design-brannalarm.mp4` | Sakte kamerakjøring rundt en moderne hvit røykdetektor i taket, hvit overflate med myke refleksjoner, en liten rød lysdiode blinker, mørkegrå bakgrunn, lys oransje kantlys. Ingen tekst eller logo. |
+| `video/design-nodlys.mp4` | Mørk moderne korridor sett nedenfra, nødlys i taket tenner ett etter ett og lyser opp en grønn rømningsveisskilt-vei, myk røyk i lufta, rolig fremoverkjøring. Ingen leselig tekst. |
+| `video/design-slokker.mp4` | Rød håndslokker på en minimalistisk vegg i et moderne trapperom, sakte kamerabevegelse inn mot manometeret, mykt sidelys, dyp skarphet. Ingen logo eller tekst. |
+| `video/design-sprinkler.mp4` | Makrobilde av sprinklerhode i taket, en dråpe vann dannes og faller i sakte film, mørk bakgrunn med oransje kantlys. |
+
+Legg filene inn som bakgrunnsfilm i seksjonene (samme `<video data-autoplay muted loop playsinline>`-mønster som filmbåndet på forsiden).
