@@ -85,8 +85,15 @@ window.BSV_CONFIG = {
   var header = $(".site-header");
   function onScroll() { if (header) header.classList.toggle("solid", window.scrollY > 40 || header.hasAttribute("data-solid")); }
   onScroll(); window.addEventListener("scroll", onScroll, { passive: true });
+  var tb = $(".theme-btn");
+  if (tb) tb.addEventListener("click", function () {
+    var cur = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+    var nxt = cur === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", nxt);
+    try { localStorage.setItem("bsv_theme", nxt); } catch (e) {}
+  });
   var mb = $(".menu-btn"), nav = $(".nav");
-  if (mb) mb.addEventListener("click", function () { var o = nav.classList.toggle("open"); mb.setAttribute("aria-expanded", o); });
+  if (mb) mb.addEventListener("click", function () { var o = nav.classList.toggle("open"); mb.setAttribute("aria-expanded", o); if (o) header.setAttribute("data-solid", ""); else header.removeAttribute("data-solid"); onScroll(); });
 
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); } }); }, { threshold: .12 });

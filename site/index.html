@@ -18,6 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem("bsv_theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="stylesheet" href="/assets/css/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://www.bsvfire.no/#org",
@@ -36,7 +37,7 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="BSV Fire – forside"><img src="/assets/img/logo-hvit.png" alt="BSV Fire – Fire Protection &amp; Safety" width="114" height="46"></a>
+    <a class="logo" href="/" aria-label="BSV Fire – forside"><img class="on-dark" src="/assets/img/logo-hvit.png" alt="BSV Fire – Fire Protection &amp; Safety" width="114" height="46"><img class="on-light" src="/assets/img/logo.png" alt="" width="114" height="46" aria-hidden="true"></a>
     <button class="menu-btn" aria-label="Meny" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Hovedmeny">
       <a href="/brannalarm/">Brannalarm</a>
@@ -47,6 +48,7 @@
       <a href="/miljo-og-barekraft/">Miljø</a>
       <a href="/kontakt/">Kontakt</a>
       <a class="btn btn-primary" href="tel:+4790046600">Ring +47 900 46 600</a>
+      <button class="theme-btn" type="button" aria-label="Bytt mellom lys og mørk modus"><span class="sun" aria-hidden="true">☀</span><span class="moon" aria-hidden="true">☾</span></button>
     </nav>
   </div>
 </header>
@@ -218,7 +220,7 @@
 <footer>
   <div class="wrap">
     <div class="foot">
-      <div><img src="/assets/img/logo-hvit.png" alt="BSV Fire" width="114" height="46" style="height:46px;width:auto;margin-bottom:12px"><p>Brannteknisk Service og Vedlikehold AS<br>Org.nr. 921 044 879 · FG-760-8016</p></div>
+      <div><img class="on-dark" src="/assets/img/logo-hvit.png" alt="BSV Fire" width="114" height="46" style="height:46px;width:auto;margin-bottom:12px"><img class="on-light" src="/assets/img/logo.png" alt="" aria-hidden="true" width="114" height="46" style="height:46px;width:auto;margin-bottom:12px"><p>Brannteknisk Service og Vedlikehold AS<br>Org.nr. 921 044 879 · FG-760-8016</p></div>
       <div><h3>Tjenester</h3><ul>
         <li><a href="/brannalarm/">Brannalarm</a></li><li><a href="/boligalarm/">Boligalarm</a></li><li><a href="/sprinkler-vanntaake/">Sprinkler og vanntåke</a></li>
         <li><a href="/nodlys/">Nødlys</a></li><li><a href="/roykventilasjon/">Røykventilasjon</a></li><li><a href="/brannslokkeutstyr/">Brannslokkeutstyr</a></li><li><a href="/dokumentasjon-fg-kontroll/">Dokumentasjon / FG-kontroll</a></li></ul></div>
