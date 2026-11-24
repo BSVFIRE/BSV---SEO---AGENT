@@ -42,12 +42,26 @@ Generiske produkter uten logo, tekst eller merkenavn. Format 16:9, 5–8 sek, ut
 
 Legg filene inn som bakgrunnsfilm i seksjonene (samme `<video data-autoplay muted loop playsinline>`-mønster som filmbåndet på forsiden).
 
+## Stilreferanse fra fourphase.com (analysert)
+Filmene der er 3D-animasjon, ikke ekte filming:
+- Hele omgivelsen er **hvit strektegning** (linjer/wireframe på hvit bakgrunn), og kun produktet er solid, i merkefargen **oransje**.
+- Rolige, glidende kameraføringer: høyt oversiktsbilde, så sakte zoom inn til produktet, tilbake ut til slutt.
+- Signaler/strømning vises som **animerte fargede linjer** gjennom rør og kabler.
+- Én liten figur i oransje arbeidsdrakt gir målestokk. Ingen tekst i filmen, forklaringen ligger som HTML på siden.
+- 8–20 sek, 1080p, rolig tempo, sømløs loop.
+BSV har samme oransje, så stilen passer: hvit tegnet bygning med brannsentralen og anlegget i oransje.
+
+**Prompt-mal (legg til alle klippene under):**
+"Clean white architectural line-art 3D render of a modern Norwegian commercial building, thin black outlines on a white background, only the fire alarm equipment is solid and coloured in vivid orange (#EF661C), soft studio lighting, smooth slow camera dolly, technical visualisation, no text, no logos."
+
+Tips: lag først ett **startbilde** per klipp med en bildemodell (i denne stilen), og bruk det som startbilde i videomodellen. Det gir best kontroll. Dette er CGI-stil, så Higgsfield kommer nær, men ikke like presist som ekte 3D-animasjon. Skal signallinjene følge nøyaktige veier, er 3D-verktøy (f.eks. Blender) bedre. Det kan løses etterpå.
+
 ## Teknisk film: «Inne i brannsentralen» (zoom inn, forklarende)
 Mål: én film som zoomer fra en brannsentral inn i kretskortet og viser hva som skjer: sløyfer, brannklokker, alarm til brannvesen, batteri, trådløse enheter, fjernstyring.
 Lag den som 6 korte klipp à 4–6 sek (mer kontroll og bedre kvalitet enn ett langt klipp), og sett dem etter hverandre.
 Modell: Cinema Studio Video 3.0 eller Seedance 2.5. Bruk siste bilde i hvert klipp som startbilde i neste, så blir zoomen sammenhengende.
 Format 16:9, uten lyd. Tekst i selve videoen blir ofte feil, så **ingen tekst i prompten**. Etikettene legger vi på siden som HTML-tekst over filmen.
-Felles stil: mørk grafitt-bakgrunn, presis produktvisualisering, kald hvit nøytral belysning, oransje (#EF661C) lys som viser signalene. Generisk utstyr, ingen logoer eller merkenavn.
+Felles stil: hvit strektegning med utstyret i oransje, se stilreferansen over. Generisk utstyr, ingen logoer eller merkenavn.
 
 | # | Klipp | Prompt | Etikett som legges på siden |
 |---|---|---|---|
