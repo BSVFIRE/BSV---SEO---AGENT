@@ -212,3 +212,9 @@ footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
 .related a{border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem;text-decoration:none;font-weight:600;font-size:.92rem;background:var(--card)}
 .related a:hover{border-color:var(--accent);color:var(--accent-dark)}
 .prose h2{font-size:1.5rem;margin-top:2rem}.prose p,.prose li{color:var(--muted)}
+
+/* Plassholder-ikon til ekte bilde er på plass */
+.ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--accent);opacity:.9;z-index:-2}
+.ph svg{width:34%;max-width:140px;height:auto}
+.page-hero .shot{position:relative;isolation:isolate}
+.page-hero .shot .ph{z-index:0}.page-hero .shot img{position:relative;z-index:1}

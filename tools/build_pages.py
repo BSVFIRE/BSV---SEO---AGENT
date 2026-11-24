@@ -20,6 +20,11 @@ TAIL = re.search(r'<div class="callbar">.*?</div>\s*<div class="cookie".*?</div>
 FORM_OPTS = re.search(r'<select name="tjeneste" required>(.*?)</select>', idx, re.S).group(1)
 
 e = html.escape
+ICONS = {'brannalarm': '<circle cx="32" cy="32" r="14"/><circle cx="32" cy="32" r="5"/><path d="M10 32h6M48 32h6M32 10v6M32 48v6M17 17l4 4M43 43l4 4M47 17l-4 4M21 43l-4 4"/>', 'boligalarm': '<path d="M10 30 32 12l22 18v22H10z"/><path d="M26 52V38h12v14"/><circle cx="32" cy="27" r="3"/>', 'sprinkler-vanntaake': '<path d="M32 8v14"/><path d="M24 22h16l-3 8H27z"/><path d="M22 40l-3 8M32 40v10M42 40l3 8M27 54v2M37 54v2"/>', 'nodlys': '<rect x="10" y="14" width="44" height="18" rx="3"/><path d="M20 38l-6 12M32 38v14M44 38l6 12"/>', 'roykventilasjon': '<rect x="12" y="12" width="40" height="40" rx="4"/><path d="M22 42c0-7 10-7 10-15M32 42c0-7 10-7 10-15"/><path d="M38 21l4-5 4 5"/>', 'brannslokkeutstyr': '<rect x="22" y="22" width="20" height="32" rx="4"/><path d="M28 22v-6h10l8 4M46 20v12M28 32h8"/>', 'dokumentasjon-fg-kontroll': '<path d="M16 8h22l10 10v38H16z"/><path d="M38 8v10h10M25 36l6 6 11-13"/>'}
+
+
+def ph(k):
+    return ('<span class="ph" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + ICONS[k] + '</svg></span>')
 
 
 def form(service=""):
@@ -243,7 +248,7 @@ def service_page(s):
     <p class="lead">{e(s["lead"])}</p>
     <div class="btn-row"><a class="btn btn-primary" href="tel:{PHONE}">Ring oss</a><a class="btn btn-outline" href="#tilbud">Be om tilbud</a></div>
   </div>
-  <div class="shot"><img src="/assets/img/{s["img"]}" alt="{e(s["alt"])}" width="800" height="1000" onerror="this.remove()"></div>
+  <div class="shot">{ph(s["slug"])}<img src="/assets/img/{s["img"]}" alt="{e(s["alt"])}" width="800" height="1000" onerror="this.remove()"></div>
 </div></section>
 
 <section class="sec-tight alt"><div class="wrap two">
